@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "24bf2a37-6e87-4e6f-b110-9b2ae3538405",
+		"name": "WebDevAssi1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32639915"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5600/note",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"note"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"jack\", \n    \"email\": \"jack.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/users/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"agha\", \n    \"email\": \"agha.com\",\n    \"password\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"jack.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/users/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"users",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "savenote",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFnaGEuY29tIiwiaWQiOiI2NWQzYzJlODBhNjQ0ZTU0ZTJkYzllZWQiLCJpYXQiOjE3MDgzNzY4MDh9.Y8NbhWzOh4N-m7FWGMio6vnD-1l7xNQWkZk_9YgdcTk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"macbeth\",\n    \"description\": \"literature\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/note/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"note",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "savenote2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFnaGEuY29tIiwiaWQiOiI2NWQzYzJlODBhNjQ0ZTU0ZTJkYzllZWQiLCJpYXQiOjE3MDgzNzY4MDh9.Y8NbhWzOh4N-m7FWGMio6vnD-1l7xNQWkZk_9YgdcTk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"history\",\n    \"description\": \"pakistan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/note/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"note",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
